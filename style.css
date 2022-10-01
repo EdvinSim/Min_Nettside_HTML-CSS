@@ -94,3 +94,10 @@ img {
 .cv-place {
     grid-column: 3;
 }
+
+.construction {
+    font-size: 50px;
+    color: red;
+    background-color: white;
+    text-align: center;
+}
