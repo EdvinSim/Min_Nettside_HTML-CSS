@@ -1,0 +1,95 @@
+body {
+    background-image: url("Inside a big empty beautiful classical concert hall. Big chandelier in the middle. Dim light.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 1000px;
+    margin: 0 auto; /*Denne sentrere hele siden*/
+}
+
+h1 {
+    text-align: center;
+    font-size: 5vw;
+    text-shadow: 1px 1px 5px white;
+}
+
+/* p {
+    margin: 100px;
+    background-color: lightgray;
+    padding: 30px;
+    font-size: 20px;
+    box-shadow: 10px 10px 5px black;
+} */
+
+img {
+    float: left;
+    max-width: 50vw;
+    max-height: 100vh;
+    border-radius: 50px; /*Denne runder av kantene*/
+    margin: 30px;
+}
+
+.menu {
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu a {
+    background-color: dimgray;
+    color: white;
+    padding: 40px 30px 40px 30px;
+    font-size: 15;
+    box-shadow: 2px 2px 2px black;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: black;
+    opacity: 0.5;
+    padding: 40px 30px 40px 30px;
+    font-size: 20;
+    box-shadow: 2px 2px 2px black;
+}
+
+.text-box {
+    margin: 100px;
+    background-color: lightgray;
+    padding: 30px;
+    font-size: 12px;
+    box-shadow: 10px 10px 5px black;
+    max-width: 1000px;
+}
+
+.text-box a {
+    padding: 10px;
+}
+
+.text-box p {
+    font-size: 12px;
+}
+
+/*Lager et rutenett av elementene inni*/
+.cv-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.cv-container h3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+}
+
+.cv-date {
+    grid-column: 1;
+}
+
+.cv-container p {
+    grid-column: 2;
+}
+
+.cv-place {
+    grid-column: 3;
+}
