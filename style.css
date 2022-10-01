@@ -1,7 +1,7 @@
 body {
     background-image: url("Inside a big empty beautiful classical concert hall. Big chandelier in the middle. Dim light.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     max-width: 1000px;
     margin: 0 auto; /*Denne sentrere hele siden*/
@@ -10,7 +10,7 @@ body {
 h1 {
     text-align: center;
     font-size: 5vw;
-    text-shadow: 1px 1px 5px white;
+    text-shadow: 2px 2px 5px white;
 }
 
 /* p {
@@ -88,6 +88,7 @@ img {
 
 .cv-container p {
     grid-column: 2;
+    padding: 10px;
 }
 
 .cv-place {
