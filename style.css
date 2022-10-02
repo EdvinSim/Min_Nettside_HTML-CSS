@@ -4,7 +4,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     margin: 0 auto; /*Denne sentrere hele siden*/
-    width: 1000px;
+    width: 100vw;
 
     padding-top: 60px; /*For site under construction ikke skal dekke over tittelen*/
 }
