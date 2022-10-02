@@ -4,7 +4,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     margin: 0 auto; /*Denne sentrere hele siden*/
-    width: 100vw;
+    min-width: 1000px;
 
     padding-top: 60px; /*For site under construction ikke skal dekke over tittelen*/
 }
@@ -47,7 +47,7 @@ h1 {
 }
 
 .box {
-    margin: 100px;
+    margin: 50px;
     background-color: lightgrey;
     padding: 30px;
     font-size: 12px;
@@ -67,6 +67,7 @@ h1 {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10px;
+    align-self: center;
 }
 
 .cv-date {
@@ -83,7 +84,6 @@ h1 {
 
 .cv-place {
     grid-column: 3;
-    width: 150px;
     border: 1px solid black;
 }
 
