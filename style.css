@@ -23,6 +23,10 @@ h1 {
     margin: 30px;
 }
 
+p.hovedside {
+    font-size: 50px;
+}
+
 .menu {
     overflow: hidden;
     text-align: center;
@@ -33,7 +37,7 @@ h1 {
     background-color: dimgray;
     color: white;
     padding: 40px 30px 40px 30px;
-    font-size: 15;
+    font-size: medium;
     box-shadow: 2px 2px 2px black;
 }
 
@@ -48,7 +52,7 @@ h1 {
 
 .box {
     margin: 50px;
-    background-color: lightgrey;
+    background-color: white;
     padding: 30px;
     font-size: 12px;
     box-shadow: 10px 10px 5px black;
