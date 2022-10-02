@@ -5,6 +5,8 @@ body {
     background-size: cover;
     max-width: 1000px;
     margin: 0 auto; /*Denne sentrere hele siden*/
+
+    padding-top: 60px; /*For site under construction ikke skal dekke over tittelen*/
 }
 
 h1 {
@@ -100,4 +102,7 @@ img {
     color: red;
     background-color: white;
     text-align: center;
+    top: 0;
+    position: fixed;
+    width: 100%;
 }
