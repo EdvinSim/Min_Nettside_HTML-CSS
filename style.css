@@ -36,7 +36,7 @@ h1 {
 }
 
 /*Hvis viewport bredde er veldig kort*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 500px) {
     .hovedside {
         display: grid;
     }
@@ -52,6 +52,20 @@ h1 {
     .menu a {
         font-size: small !important;
     }
+
+    .cv-place {
+        font-size: 10px;
+    }
+
+    .cv-date {
+        font-size: 10px;
+    }
+
+    .cv-content p{
+        font-size: 10px !important;
+    }
+
+
 
 }
 
@@ -90,7 +104,7 @@ h1 {
 }
 
 .box {
-    margin-top: 10vw ;
+    margin-top: 10vw;
     margin-left: 5vw;
     margin-right: 5vw;
     margin-bottom: 3vw;
@@ -121,7 +135,7 @@ h1 {
     width: 15vw;
 }
 
-.cv-innhold {
+.cv-content {
     grid-column: 2;
     max-width: 400px;
     width: 40vw;
@@ -130,6 +144,11 @@ h1 {
 .cv-place {
     grid-column: 3;
     width: 15vw;
+    display: flex;
+}
+
+.cv-ferdigheter {
+    margin-left: 10vw;
 }
 
 .booking {
