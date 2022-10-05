@@ -19,7 +19,7 @@ body {
     height: 100%;
     opacity: 0.75;
 
-    background-image: url("Inside a big empty beautiful classical concert hall. Big chandelier in the middle. Dim light.png");
+    background-image: url("assets/Inside a big empty beautiful classical concert hall. Big chandelier in the middle. Dim light.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -55,17 +55,21 @@ h1 {
 
     .cv-place {
         font-size: 10px;
+        grid-column: 1 !important;
     }
 
     .cv-date {
         font-size: 10px;
     }
 
+    .cv-content {
+        grid-row: span 2;
+        width: 60vw !important;
+    }
+
     .cv-content p{
         font-size: 10px !important;
     }
-
-
 
 }
 
@@ -114,36 +118,39 @@ h1 {
     box-shadow: 10px 10px 5px black;
 }
 
-.box a {
-    padding: 10px;
-}
-
 .box p {
     font-size: 12px;
+}
+
+.box h2 {
+    text-align: center;
+    text-decoration: underline;
 }
 
 /*Lager et rutenett av elementene inni*/
 .cv-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 1vw;
+    gap: 2vw;
     align-self: center;
 }
 
 .cv-date {
     grid-column: 1;
-    width: 15vw;
+    max-width: 150px;
+    width: 20vw;
 }
 
 .cv-content {
     grid-column: 2;
     max-width: 400px;
-    width: 40vw;
+    width: 30vw;
 }
 
 .cv-place {
     grid-column: 3;
-    width: 15vw;
+    max-width: 150px;
+    width: 20vw;
     display: flex;
 }
 
@@ -183,4 +190,16 @@ h1 {
     left: 0;
     position: fixed;
     width: 100%;
+}
+
+/*En wrapper for img*/
+.verk {
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.verk img {
+    max-width: 100%;
 }
