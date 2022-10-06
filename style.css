@@ -53,18 +53,30 @@ h1 {
         font-size: small !important;
     }
 
+    .cv-container {
+        grid-template-areas:
+        "place cont"
+        "date cont"
+        ;
+    }
+
     .cv-place {
         font-size: 10px;
         grid-column: 1 !important;
+        grid-area: place;
+        margin-bottom: 0;
     }
 
     .cv-date {
         font-size: 10px;
+        grid-area: date;
+        margin-top: 0;
     }
 
     .cv-content {
         grid-row: span 2;
         width: 60vw !important;
+        grid-area: cont;
     }
 
     .cv-content p{
@@ -155,7 +167,9 @@ h1 {
 }
 
 .cv-ferdigheter {
-    margin-left: 10vw;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .booking {
@@ -165,9 +179,14 @@ h1 {
 
 .booking p {
     font-size: 20px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
 .booking img {
+    min-width: 200px;
     max-width: 30vw;
     margin: 2vw;
 }
