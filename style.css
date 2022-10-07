@@ -32,7 +32,6 @@ body {
 h1 {
     text-align: center;
     font-size: 5vw;
-    text-shadow: 2px 2px 5px white;
 }
 
 /*Hvis viewport bredde er veldig kort*/
@@ -109,6 +108,7 @@ h1 {
     padding: 3vw 3vw 3vw 3vw;
     font-size: medium;
     box-shadow: 2px 2px 2px black;
+    text-decoration: none;
 }
 
 .menu a:hover {
@@ -211,12 +211,15 @@ h1 {
     width: 100%;
 }
 
-/*En wrapper for img*/
+/*En wrapper for img og gir style til toppteksten*/
 .verk {
     max-width: 500px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: 3vw;
+
+    font-size: 15px;
 }
 
 .verk img {
