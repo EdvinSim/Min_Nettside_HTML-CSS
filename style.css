@@ -19,7 +19,7 @@ body {
     height: 100%;
     opacity: 0.75;
 
-    background-image: url("Inside a big empty beautiful classical concert hall. Big chandelier in the middle. Dim light.png");
+    background-image: url("assets/Inside a big empty beautiful classical concert hall. Big chandelier in the middle. Dim light.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -32,7 +32,7 @@ body {
 h1 {
     text-align: center;
     font-size: 5vw;
-    text-shadow: 2px 2px 5px white;
+    text-shadow: 1px 1px 5px white;
 }
 
 /*Hvis viewport bredde er veldig kort*/
@@ -53,19 +53,35 @@ h1 {
         font-size: small !important;
     }
 
+    .cv-container {
+        grid-template-areas:
+        "place cont"
+        "date cont"
+        ;
+    }
+
     .cv-place {
         font-size: 10px;
+        grid-column: 1 !important;
+        grid-area: place;
+        margin-bottom: 0;
     }
 
     .cv-date {
         font-size: 10px;
+        grid-area: date;
+        margin-top: 0;
+    }
+
+    .cv-content {
+        grid-row: span 2;
+        width: 60vw !important;
+        grid-area: cont;
     }
 
     .cv-content p{
         font-size: 10px !important;
     }
-
-
 
 }
 
@@ -75,6 +91,7 @@ h1 {
     max-height: 100vh;
     border-radius: 50px; /*Denne runder av kantene*/
     margin: 30px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.67);
 }
 
 .hovedside-tekst {
@@ -93,6 +110,7 @@ h1 {
     padding: 3vw 3vw 3vw 3vw;
     font-size: medium;
     box-shadow: 2px 2px 2px black;
+    text-decoration: none;
 }
 
 .menu a:hover {
@@ -114,41 +132,46 @@ h1 {
     box-shadow: 10px 10px 5px black;
 }
 
-.box a {
-    padding: 10px;
-}
-
 .box p {
     font-size: 12px;
+}
+
+.box h2 {
+    text-align: center;
+    text-decoration: underline;
 }
 
 /*Lager et rutenett av elementene inni*/
 .cv-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 1vw;
+    gap: 2vw;
     align-self: center;
 }
 
 .cv-date {
     grid-column: 1;
-    width: 15vw;
+    max-width: 150px;
+    width: 20vw;
 }
 
 .cv-content {
     grid-column: 2;
     max-width: 400px;
-    width: 40vw;
+    width: 30vw;
 }
 
 .cv-place {
     grid-column: 3;
-    width: 15vw;
+    max-width: 150px;
+    width: 20vw;
     display: flex;
 }
 
 .cv-ferdigheter {
-    margin-left: 10vw;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .booking {
@@ -158,9 +181,14 @@ h1 {
 
 .booking p {
     font-size: 20px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
 .booking img {
+    min-width: 200px;
     max-width: 30vw;
     margin: 2vw;
 }
@@ -183,4 +211,19 @@ h1 {
     left: 0;
     position: fixed;
     width: 100%;
+}
+
+/*En wrapper for img og gir style til toppteksten*/
+.verk {
+    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3vw;
+
+    font-size: 15px;
+}
+
+.verk img {
+    max-width: 100%;
 }
