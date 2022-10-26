@@ -35,7 +35,7 @@ h1 {
     text-shadow: 1px 1px 5px white;
 }
 
-/*Hvis viewport bredde er veldig kort*/
+/*Mobile view. Hvis viewport bredde er veldig kort*/
 @media screen and (max-width: 500px) {
     .hovedside {
         display: grid;
